@@ -54,7 +54,6 @@ public class Player : NetworkBehaviour {
 
     public void ApplyPlayerColor() {
         GetComponent<MeshRenderer>().material.color = PlayerColor.Value;
-        transform.Find("LArm").GetComponent<MeshRenderer>().material.color = PlayerColor.Value;
         transform.Find("RArm").GetComponent<MeshRenderer>().material.color = PlayerColor.Value;
     }
     public void DisplayScore()
